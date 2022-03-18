@@ -10,7 +10,7 @@ body {
 }
 
 .logo {
-  margin: 100px 0;
+  margin: 150px 0 100px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -146,6 +146,7 @@ section > div {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 .right h1 {
   color: hsl(172, 67%, 45%);
@@ -169,3 +170,4 @@ section > div {
   }
   
 }
+
