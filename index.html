@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Normalize -->
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Main Style -->
+  <link rel="stylesheet" href="CSS/main.css">
+  <title>Tip_Calculator | AKASI</title>
+</head>
+
+<body>
+
+  <img src="/images/logo.svg" alt="" class="logo">
+
+  <section>
+
+    <div class="left">
+      <div class="input bill">
+        <label for="bill">Bill</label>
+        <input type="text" id=bill placeholder="0" value="0.0">
+        <img src="/images/icon-dollar.svg" alt="">
+      </div>
+
+      <label for="discount">Select Tip %</label>
+      <div class="discount" id="discount">
+        <div class="card" data-perc=".05">5%</div>
+        <div class="card" data-perc=".10">10%</div>
+        <div class="card" data-perc=".15">15%</div>
+        <div class="card" data-perc=".25">25%</div>
+        <div class="card" data-perc=".50">50%</div>
+        <input type=text class="custom" placeholder="Custom">
+      </div>
+
+      <div class="input people">
+        <label for="people">Number Of People</label>
+        <label class="error">Can't be Zero</label>
+        <input type="number" id=people value="1">
+        <img src="/images/icon-person.svg" alt="">
+      </div>
+    </div>
+
+
+    <div class="right">
+      <div class="calc">
+        <div class="tip amount">
+          <h4>Tip Amount <span>/ person</span></h4>
+          <h1 class="t1"></h1>
+        </div>
+
+        <div class="tip total">
+          <h4>Total <span>/ person</span></h4>
+          <h1 class="t2"></h1>
+        </div>
+      </div>
+
+      <div class="reset">Reset</div>
+    </div>
+  </section>
+
+  <script src="/main.js"></script>
+</body>
+
+</html>
